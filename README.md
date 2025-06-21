@@ -9,8 +9,9 @@ The project provides a snapshot of the LEM Station web presence in both Ukrainia
 ## Deployment
 
 1. Upload the repository contents to your web server.
-2. Rename `htaccess` to `.htaccess` so that Apache style rewrite rules and the custom index take effect.
-3. Ensure your server uses `page8455448.html` as the start page (as defined in `.htaccess`).
+2. If you are using Apache, rename `htaccess` to `.htaccess` so that the rewrite rules and custom start page work.
+3. When serving from GitHub Pages, `.htaccess` is ignored. In this repository an `index.html` file redirects to `page8455448.html` so that `https://leodrom.github.io/LEMStation` opens the correct home page.
+4. Ensure your server uses `page8455448.html` as the start page (either via `.htaccess` or the redirect).
 
 ## Editing
 
